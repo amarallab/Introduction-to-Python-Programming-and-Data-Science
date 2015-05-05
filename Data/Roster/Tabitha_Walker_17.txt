@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Tabitha S. Walker
+Date of Birth:	3/29/75
+Email Address:	tabitha.walker@northwestern.edu
+Department:	Chemistry
+Height:	5ft,0in
+Weight:	217lbs
+Favorite Color:	Red
+Favorite Animal:	Dog
+Zodiac Sign:	March

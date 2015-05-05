@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Ezekiel E. Allen
+Date of Birth:	3/11/86
+Email Address:	ezekiel.allen@northwestern.edu
+Department:	Chemistry
+Height:	4ft,11in
+Weight:	169lbs
+Favorite Color:	Red
+Favorite Animal:	Dog
+Zodiac Sign:	March

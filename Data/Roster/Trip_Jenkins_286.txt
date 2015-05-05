@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip P. Jenkins
+Date of Birth:	4/10/82
+Email Address:	trip.jenkins@northwestern.edu
+Department:	Nursing
+Height:	5ft,6in
+Weight:	161lbs
+Favorite Color:	Yellow
+Favorite Animal:	Horse
+Zodiac Sign:	April

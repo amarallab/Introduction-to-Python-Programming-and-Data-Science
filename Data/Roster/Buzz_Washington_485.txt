@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Buzz S. Washington
+Date of Birth:	4/29/86
+Email Address:	buzz.washington@northwestern.edu
+Department:	Political Science
+Height:	5ft,3in
+Weight:	168lbs
+Favorite Color:	Purple
+Favorite Animal:	Mouse
+Zodiac Sign:	April

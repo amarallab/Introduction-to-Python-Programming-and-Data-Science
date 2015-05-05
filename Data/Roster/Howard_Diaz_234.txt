@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard E. Diaz
+Date of Birth:	12/19/79
+Email Address:	howard.diaz@northwestern.edu
+Department:	History
+Height:	5ft,6in
+Weight:	209lbs
+Favorite Color:	Yellow
+Favorite Animal:	Whale
+Zodiac Sign:	December

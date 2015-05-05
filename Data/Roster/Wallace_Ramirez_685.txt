@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Wallace O. Ramirez
+Date of Birth:	1/21/89
+Email Address:	wallace.ramirez@northwestern.edu
+Department:	Engineering
+Height:	5ft,11in
+Weight:	185lbs
+Favorite Color:	Lime
+Favorite Animal:	Snake
+Zodiac Sign:	January

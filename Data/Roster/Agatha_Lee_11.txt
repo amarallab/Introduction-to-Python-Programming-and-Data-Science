@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Agatha I. Lee
+Date of Birth:	8/21/93
+Email Address:	agatha.lee@northwestern.edu
+Department:	Chemistry
+Height:	5ft,7in
+Weight:	162lbs
+Favorite Color:	Red
+Favorite Animal:	Dog
+Zodiac Sign:	August

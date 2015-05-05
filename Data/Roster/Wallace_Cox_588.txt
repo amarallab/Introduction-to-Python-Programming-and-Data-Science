@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Wallace M. Cox
+Date of Birth:	1/27/81
+Email Address:	wallace.cox@northwestern.edu
+Department:	Engineering
+Height:	5ft,7in
+Weight:	176lbs
+Favorite Color:	Pink
+Favorite Animal:	Mouse
+Zodiac Sign:	January

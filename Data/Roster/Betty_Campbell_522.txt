@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Betty Campbell
+Date of Birth:	5/30/86
+Email Address:	betty.campbell@northwestern.edu
+Department:	Engineering
+Height:	6ft,1in
+Weight:	220lbs
+Favorite Color:	Teal
+Favorite Animal:	Mouse
+Zodiac Sign:	May

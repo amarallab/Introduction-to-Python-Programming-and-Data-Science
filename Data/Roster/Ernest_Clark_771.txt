@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Ernest Y. Clark
+Date of Birth:	7/11/79
+Email Address:	ernest.clark@northwestern.edu
+Department:	Engineering
+Height:	4ft,10in
+Weight:	216lbs
+Favorite Color:	Lime
+Favorite Animal:	Turtle
+Zodiac Sign:	July

@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace L. Jenkins
+Date of Birth:	12/25/86
+Email Address:	eustace.jenkins@northwestern.edu
+Department:	Nursing
+Height:	5ft,7in
+Weight:	215lbs
+Favorite Color:	Yellow
+Favorite Animal:	Mouse
+Zodiac Sign:	December

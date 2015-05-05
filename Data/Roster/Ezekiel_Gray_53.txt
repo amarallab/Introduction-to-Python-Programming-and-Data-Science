@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Ezekiel M. Gray
+Date of Birth:	6/2/81
+Email Address:	ezekiel.gray@northwestern.edu
+Department:	Math
+Height:	4ft,10in
+Weight:	207lbs
+Favorite Color:	Blue
+Favorite Animal:	Cat
+Zodiac Sign:	June

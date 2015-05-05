@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Wallace S. Peterson
+Date of Birth:	5/19/86
+Email Address:	wallace.peterson@northwestern.edu
+Department:	Engineering
+Height:	5ft,9in
+Weight:	172lbs
+Favorite Color:	Lime
+Favorite Animal:	Turtle
+Zodiac Sign:	May

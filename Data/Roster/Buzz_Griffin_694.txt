@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Buzz Griffin
+Date of Birth:	4/5/79
+Email Address:	buzz.griffin@northwestern.edu
+Department:	Engineering
+Height:	5ft,10in
+Weight:	206lbs
+Favorite Color:	Lime
+Favorite Animal:	Snake
+Zodiac Sign:	April

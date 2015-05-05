@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Buzz W. Bell
+Date of Birth:	9/14/86
+Email Address:	buzz.bell@northwestern.edu
+Department:	Physics
+Height:	5ft,10in
+Weight:	205lbs
+Favorite Color:	Yellow
+Favorite Animal:	Whale
+Zodiac Sign:	September

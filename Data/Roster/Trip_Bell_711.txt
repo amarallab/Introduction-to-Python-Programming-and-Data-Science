@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip G. Bell
+Date of Birth:	12/27/88
+Email Address:	trip.bell@northwestern.edu
+Department:	Engineering
+Height:	5ft,6in
+Weight:	162lbs
+Favorite Color:	Lime
+Favorite Animal:	Fish
+Zodiac Sign:	December

@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard J. Sanchez
+Date of Birth:	5/16/80
+Email Address:	howard.sanchez@northwestern.edu
+Department:	English
+Height:	5ft,8in
+Weight:	177lbs
+Favorite Color:	Green
+Favorite Animal:	Bird
+Zodiac Sign:	May

@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Matthias C. Foster
+Date of Birth:	10/26/79
+Email Address:	matthias.foster@northwestern.edu
+Department:	Sociology
+Height:	5ft,10in
+Weight:	189lbs
+Favorite Color:	Purple
+Favorite Animal:	Mouse
+Zodiac Sign:	October

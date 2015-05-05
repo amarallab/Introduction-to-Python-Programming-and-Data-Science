@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip A. Watson
+Date of Birth:	6/7/76
+Email Address:	trip.watson@northwestern.edu
+Department:	Nursing
+Height:	5ft,4in
+Weight:	216lbs
+Favorite Color:	Yellow
+Favorite Animal:	Horse
+Zodiac Sign:	June

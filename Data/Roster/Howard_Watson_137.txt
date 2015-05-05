@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard I. Watson
+Date of Birth:	8/30/91
+Email Address:	howard.watson@northwestern.edu
+Department:	English
+Height:	6ft,0in
+Weight:	172lbs
+Favorite Color:	Blue
+Favorite Animal:	Bird
+Zodiac Sign:	August

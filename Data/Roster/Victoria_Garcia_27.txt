@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Victoria N. Garcia
+Date of Birth:	4/25/82
+Email Address:	victoria.garcia@northwestern.edu
+Department:	Chemistry
+Height:	5ft,3in
+Weight:	163lbs
+Favorite Color:	Red
+Favorite Animal:	Dog
+Zodiac Sign:	April

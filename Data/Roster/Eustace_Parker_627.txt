@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace I. Parker
+Date of Birth:	5/23/83
+Email Address:	eustace.parker@northwestern.edu
+Department:	Engineering
+Height:	5ft,11in
+Weight:	210lbs
+Favorite Color:	Navy
+Favorite Animal:	Snake
+Zodiac Sign:	May

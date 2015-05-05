@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Ezekiel P. Rodriguez
+Date of Birth:	3/6/93
+Email Address:	ezekiel.rodriguez@northwestern.edu
+Department:	Engineering
+Height:	5ft,3in
+Weight:	159lbs
+Favorite Color:	Lime
+Favorite Animal:	Snake
+Zodiac Sign:	March

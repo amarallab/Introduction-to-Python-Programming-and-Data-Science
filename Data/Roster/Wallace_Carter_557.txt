@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Wallace X. Carter
+Date of Birth:	12/11/84
+Email Address:	wallace.carter@northwestern.edu
+Department:	Engineering
+Height:	5ft,0in
+Weight:	150lbs
+Favorite Color:	Teal
+Favorite Animal:	Mouse
+Zodiac Sign:	December

@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Buzz U. Miller
+Date of Birth:	9/25/78
+Email Address:	buzz.miller@northwestern.edu
+Department:	English
+Height:	5ft,7in
+Weight:	206lbs
+Favorite Color:	Green
+Favorite Animal:	Bird
+Zodiac Sign:	September

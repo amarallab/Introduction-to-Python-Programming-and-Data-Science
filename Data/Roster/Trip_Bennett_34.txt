@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip Z. Bennett
+Date of Birth:	12/31/89
+Email Address:	trip.bennett@northwestern.edu
+Department:	Math
+Height:	5ft,8in
+Weight:	170lbs
+Favorite Color:	Red
+Favorite Animal:	Cat
+Zodiac Sign:	December

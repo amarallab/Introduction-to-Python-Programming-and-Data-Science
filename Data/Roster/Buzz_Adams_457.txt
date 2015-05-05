@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Buzz V. Adams
+Date of Birth:	5/29/84
+Email Address:	buzz.adams@northwestern.edu
+Department:	Political Science
+Height:	5ft,2in
+Weight:	166lbs
+Favorite Color:	Purple
+Favorite Animal:	Mouse
+Zodiac Sign:	May

@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip S. Martinez
+Date of Birth:	10/26/83
+Email Address:	trip.martinez@northwestern.edu
+Department:	Engineering
+Height:	5ft,0in
+Weight:	214lbs
+Favorite Color:	Lime
+Favorite Animal:	Snake
+Zodiac Sign:	October

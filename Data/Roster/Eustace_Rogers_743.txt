@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace D. Rogers
+Date of Birth:	8/1/89
+Email Address:	eustace.rogers@northwestern.edu
+Department:	Engineering
+Height:	5ft,5in
+Weight:	190lbs
+Favorite Color:	Lime
+Favorite Animal:	Frog
+Zodiac Sign:	August

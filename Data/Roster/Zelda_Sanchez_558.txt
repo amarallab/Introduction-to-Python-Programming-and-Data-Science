@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Zelda I. Sanchez
+Date of Birth:	12/23/87
+Email Address:	zelda.sanchez@northwestern.edu
+Department:	Engineering
+Height:	5ft,10in
+Weight:	158lbs
+Favorite Color:	Teal
+Favorite Animal:	Mouse
+Zodiac Sign:	December

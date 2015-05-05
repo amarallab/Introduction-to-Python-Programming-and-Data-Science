@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip K. Griffin
+Date of Birth:	8/8/83
+Email Address:	trip.griffin@northwestern.edu
+Department:	Engineering
+Height:	5ft,10in
+Weight:	194lbs
+Favorite Color:	Lime
+Favorite Animal:	Turtle
+Zodiac Sign:	August

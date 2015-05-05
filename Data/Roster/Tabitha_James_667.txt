@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Tabitha C. James
+Date of Birth:	10/2/91
+Email Address:	tabitha.james@northwestern.edu
+Department:	Engineering
+Height:	5ft,10in
+Weight:	166lbs
+Favorite Color:	Lime
+Favorite Animal:	Snake
+Zodiac Sign:	October

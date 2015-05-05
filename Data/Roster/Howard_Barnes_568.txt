@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard F. Barnes
+Date of Birth:	11/15/80
+Email Address:	howard.barnes@northwestern.edu
+Department:	Engineering
+Height:	5ft,11in
+Weight:	160lbs
+Favorite Color:	Black
+Favorite Animal:	Mouse
+Zodiac Sign:	November

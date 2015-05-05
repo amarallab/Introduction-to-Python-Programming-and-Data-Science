@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace J. Lee
+Date of Birth:	2/25/84
+Email Address:	eustace.lee@northwestern.edu
+Department:	English
+Height:	5ft,10in
+Weight:	191lbs
+Favorite Color:	Green
+Favorite Animal:	Bird
+Zodiac Sign:	February

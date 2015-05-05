@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip T. Carter
+Date of Birth:	8/19/88
+Email Address:	trip.carter@northwestern.edu
+Department:	Engineering
+Height:	6ft,1in
+Weight:	185lbs
+Favorite Color:	Navy
+Favorite Animal:	Snake
+Zodiac Sign:	August

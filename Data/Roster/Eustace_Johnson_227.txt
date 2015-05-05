@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace Z. Johnson
+Date of Birth:	8/3/82
+Email Address:	eustace.johnson@northwestern.edu
+Department:	History
+Height:	6ft,0in
+Weight:	210lbs
+Favorite Color:	Yellow
+Favorite Animal:	Whale
+Zodiac Sign:	August

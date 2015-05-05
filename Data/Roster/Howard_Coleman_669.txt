@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard J. Coleman
+Date of Birth:	7/28/79
+Email Address:	howard.coleman@northwestern.edu
+Department:	Engineering
+Height:	5ft,5in
+Weight:	218lbs
+Favorite Color:	Lime
+Favorite Animal:	Snake
+Zodiac Sign:	July

@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Lorelei D. Jones
+Date of Birth:	10/19/78
+Email Address:	lorelei.jones@northwestern.edu
+Department:	Engineering
+Height:	5ft,8in
+Weight:	206lbs
+Favorite Color:	Lime
+Favorite Animal:	Turtle
+Zodiac Sign:	October

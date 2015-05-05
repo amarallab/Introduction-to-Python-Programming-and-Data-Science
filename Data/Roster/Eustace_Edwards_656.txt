@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace C. Edwards
+Date of Birth:	7/20/83
+Email Address:	eustace.edwards@northwestern.edu
+Department:	Engineering
+Height:	5ft,0in
+Weight:	219lbs
+Favorite Color:	Lime
+Favorite Animal:	Snake
+Zodiac Sign:	July

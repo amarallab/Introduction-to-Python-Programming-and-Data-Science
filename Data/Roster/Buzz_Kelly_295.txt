@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Buzz E. Kelly
+Date of Birth:	6/25/84
+Email Address:	buzz.kelly@northwestern.edu
+Department:	Nursing
+Height:	5ft,6in
+Weight:	172lbs
+Favorite Color:	Yellow
+Favorite Animal:	Mouse
+Zodiac Sign:	June

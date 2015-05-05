@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Ezekiel O. Gonzalez
+Date of Birth:	3/13/86
+Email Address:	ezekiel.gonzalez@northwestern.edu
+Department:	Math
+Height:	5ft,3in
+Weight:	196lbs
+Favorite Color:	Red
+Favorite Animal:	Cat
+Zodiac Sign:	March

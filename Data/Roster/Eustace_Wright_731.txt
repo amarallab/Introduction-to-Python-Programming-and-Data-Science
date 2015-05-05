@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace A. Wright
+Date of Birth:	3/29/88
+Email Address:	eustace.wright@northwestern.edu
+Department:	Engineering
+Height:	5ft,2in
+Weight:	172lbs
+Favorite Color:	Lime
+Favorite Animal:	Fish
+Zodiac Sign:	March

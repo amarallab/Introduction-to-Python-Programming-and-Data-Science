@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard S. Lee
+Date of Birth:	5/12/79
+Email Address:	howard.lee@northwestern.edu
+Department:	Economics
+Height:	4ft,11in
+Weight:	197lbs
+Favorite Color:	Orange
+Favorite Animal:	Mouse
+Zodiac Sign:	May

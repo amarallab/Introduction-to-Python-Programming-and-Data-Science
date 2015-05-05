@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard V. Foster
+Date of Birth:	1/27/79
+Email Address:	howard.foster@northwestern.edu
+Department:	Psychology
+Height:	5ft,7in
+Weight:	183lbs
+Favorite Color:	Yellow
+Favorite Animal:	Mouse
+Zodiac Sign:	January

@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Orville F. Green
+Date of Birth:	8/3/87
+Email Address:	orville.green@northwestern.edu
+Department:	English
+Height:	5ft,0in
+Weight:	219lbs
+Favorite Color:	Yellow
+Favorite Animal:	Panda
+Zodiac Sign:	August

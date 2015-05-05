@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Betty V. Hall
+Date of Birth:	2/11/93
+Email Address:	betty.hall@northwestern.edu
+Department:	Engineering
+Height:	5ft,11in
+Weight:	197lbs
+Favorite Color:	Purple
+Favorite Animal:	Mouse
+Zodiac Sign:	February

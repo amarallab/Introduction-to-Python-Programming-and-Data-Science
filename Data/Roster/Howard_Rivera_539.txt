@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard N. Rivera
+Date of Birth:	11/16/81
+Email Address:	howard.rivera@northwestern.edu
+Department:	Engineering
+Height:	5ft,6in
+Weight:	212lbs
+Favorite Color:	Teal
+Favorite Animal:	Mouse
+Zodiac Sign:	November

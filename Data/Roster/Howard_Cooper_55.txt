@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard M. Cooper
+Date of Birth:	2/28/82
+Email Address:	howard.cooper@northwestern.edu
+Department:	Music
+Height:	5ft,10in
+Weight:	214lbs
+Favorite Color:	Blue
+Favorite Animal:	Cat
+Zodiac Sign:	February

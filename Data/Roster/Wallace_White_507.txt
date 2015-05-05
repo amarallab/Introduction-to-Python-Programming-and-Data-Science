@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Wallace A. White
+Date of Birth:	9/15/88
+Email Address:	wallace.white@northwestern.edu
+Department:	Engineering
+Height:	6ft,1in
+Weight:	164lbs
+Favorite Color:	Purple
+Favorite Animal:	Mouse
+Zodiac Sign:	September

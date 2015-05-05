@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Ernest T. Harris
+Date of Birth:	10/16/88
+Email Address:	ernest.harris@northwestern.edu
+Department:	Engineering
+Height:	5ft,3in
+Weight:	208lbs
+Favorite Color:	Lime
+Favorite Animal:	Frog
+Zodiac Sign:	October

@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Buzz King
+Date of Birth:	8/21/86
+Email Address:	buzz.king@northwestern.edu
+Department:	Nursing
+Height:	5ft,4in
+Weight:	150lbs
+Favorite Color:	Yellow
+Favorite Animal:	Mouse
+Zodiac Sign:	August

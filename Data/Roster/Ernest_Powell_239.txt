@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Ernest C. Powell
+Date of Birth:	11/8/91
+Email Address:	ernest.powell@northwestern.edu
+Department:	Physics
+Height:	5ft,10in
+Weight:	211lbs
+Favorite Color:	Yellow
+Favorite Animal:	Whale
+Zodiac Sign:	November

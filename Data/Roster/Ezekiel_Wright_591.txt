@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Ezekiel C. Wright
+Date of Birth:	12/23/74
+Email Address:	ezekiel.wright@northwestern.edu
+Department:	Engineering
+Height:	5ft,5in
+Weight:	150lbs
+Favorite Color:	Pink
+Favorite Animal:	Mouse
+Zodiac Sign:	December

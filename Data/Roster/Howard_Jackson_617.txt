@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Howard G. Jackson
+Date of Birth:	5/21/81
+Email Address:	howard.jackson@northwestern.edu
+Department:	Engineering
+Height:	5ft,2in
+Weight:	194lbs
+Favorite Color:	Pink
+Favorite Animal:	Snake
+Zodiac Sign:	May

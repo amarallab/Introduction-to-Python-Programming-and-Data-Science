@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace V. Hernandez
+Date of Birth:	2/1/74
+Email Address:	eustace.hernandez@northwestern.edu
+Department:	Physics
+Height:	6ft,1in
+Weight:	205lbs
+Favorite Color:	Yellow
+Favorite Animal:	Whale
+Zodiac Sign:	February

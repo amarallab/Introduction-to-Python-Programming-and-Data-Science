@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip O. Jones
+Date of Birth:	9/25/93
+Email Address:	trip.jones@northwestern.edu
+Department:	Music
+Height:	5ft,0in
+Weight:	213lbs
+Favorite Color:	Blue
+Favorite Animal:	Cat
+Zodiac Sign:	September

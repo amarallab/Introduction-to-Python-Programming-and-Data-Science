@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Zelda O. Watson
+Date of Birth:	3/1/82
+Email Address:	zelda.watson@northwestern.edu
+Department:	Sociology
+Height:	5ft,9in
+Weight:	172lbs
+Favorite Color:	Purple
+Favorite Animal:	Mouse
+Zodiac Sign:	March

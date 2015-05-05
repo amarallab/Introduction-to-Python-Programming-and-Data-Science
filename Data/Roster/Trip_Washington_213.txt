@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip B. Washington
+Date of Birth:	6/3/78
+Email Address:	trip.washington@northwestern.edu
+Department:	History
+Height:	5ft,0in
+Weight:	173lbs
+Favorite Color:	Yellow
+Favorite Animal:	Whale
+Zodiac Sign:	June

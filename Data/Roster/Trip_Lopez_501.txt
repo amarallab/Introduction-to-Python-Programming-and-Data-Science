@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Trip Z. Lopez
+Date of Birth:	5/8/74
+Email Address:	trip.lopez@northwestern.edu
+Department:	Engineering
+Height:	5ft,7in
+Weight:	209lbs
+Favorite Color:	Purple
+Favorite Animal:	Mouse
+Zodiac Sign:	May

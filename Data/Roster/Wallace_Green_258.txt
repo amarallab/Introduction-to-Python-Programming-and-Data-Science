@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Wallace T. Green
+Date of Birth:	3/10/74
+Email Address:	wallace.green@northwestern.edu
+Department:	Nursing
+Height:	5ft,9in
+Weight:	156lbs
+Favorite Color:	Yellow
+Favorite Animal:	Horse
+Zodiac Sign:	March

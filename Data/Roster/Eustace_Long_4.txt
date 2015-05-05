@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace F. Long
+Date of Birth:	5/22/77
+Email Address:	eustace.long@northwestern.edu
+Department:	Chemistry
+Height:	5ft,7in
+Weight:	178lbs
+Favorite Color:	Red
+Favorite Animal:	Dog
+Zodiac Sign:	May

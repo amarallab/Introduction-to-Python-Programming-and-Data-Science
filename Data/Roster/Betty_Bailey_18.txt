@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Betty R. Bailey
+Date of Birth:	12/22/89
+Email Address:	betty.bailey@northwestern.edu
+Department:	Chemistry
+Height:	5ft,11in
+Weight:	215lbs
+Favorite Color:	Red
+Favorite Animal:	Dog
+Zodiac Sign:	December

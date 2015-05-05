@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Betty T. Bell
+Date of Birth:	10/6/79
+Email Address:	betty.bell@northwestern.edu
+Department:	Engineering
+Height:	5ft,5in
+Weight:	183lbs
+Favorite Color:	Pink
+Favorite Animal:	Snake
+Zodiac Sign:	October

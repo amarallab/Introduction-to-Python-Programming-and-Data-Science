@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Victoria S. Wright
+Date of Birth:	4/6/88
+Email Address:	victoria.wright@northwestern.edu
+Department:	Engineering
+Height:	5ft,9in
+Weight:	181lbs
+Favorite Color:	Purple
+Favorite Animal:	Mouse
+Zodiac Sign:	April

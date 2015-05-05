@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace Powell
+Date of Birth:	1/15/81
+Email Address:	eustace.powell@northwestern.edu
+Department:	Sociology
+Height:	5ft,5in
+Weight:	208lbs
+Favorite Color:	Orange
+Favorite Animal:	Mouse
+Zodiac Sign:	January

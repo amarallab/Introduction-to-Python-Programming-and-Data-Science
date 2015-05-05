@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Ernest N. Mitchell
+Date of Birth:	10/30/76
+Email Address:	ernest.mitchell@northwestern.edu
+Department:	Engineering
+Height:	6ft,1in
+Weight:	197lbs
+Favorite Color:	Lime
+Favorite Animal:	Turtle
+Zodiac Sign:	October

@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name:	Eustace E. Bailey
+Date of Birth:	2/18/82
+Email Address:	eustace.bailey@northwestern.edu
+Department:	Engineering
+Height:	5ft,5in
+Weight:	200lbs
+Favorite Color:	Teal
+Favorite Animal:	Mouse
+Zodiac Sign:	February
