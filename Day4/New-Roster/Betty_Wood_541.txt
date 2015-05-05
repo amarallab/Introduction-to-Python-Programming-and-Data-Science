@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Betty X. Wood
+Date of Birth -- 	3/11/80
+Email Address -- 	betty.wood@northwestern.edu
+Department -- 	Engineering
+Height -- 	4ft,10in
+Weight -- 	182lbs
+Favorite Color -- 	Teal
+Favorite Animal -- 	Mouse
+Zodiac Sign -- 	March

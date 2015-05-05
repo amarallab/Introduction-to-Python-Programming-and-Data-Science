@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Betty Z. Powell
+Date of Birth -- 	7/9/77
+Email Address -- 	betty.powell@northwestern.edu
+Department -- 	Nursing
+Height -- 	5ft,5in
+Weight -- 	179lbs
+Favorite Color -- 	Yellow
+Favorite Animal -- 	Horse
+Zodiac Sign -- 	July

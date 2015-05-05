@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Betty Q. Watson
+Date of Birth -- 	9/3/85
+Email Address -- 	betty.watson@northwestern.edu
+Department -- 	Engineering
+Height -- 	5ft,0in
+Weight -- 	156lbs
+Favorite Color -- 	Lime
+Favorite Animal -- 	Snake
+Zodiac Sign -- 	September

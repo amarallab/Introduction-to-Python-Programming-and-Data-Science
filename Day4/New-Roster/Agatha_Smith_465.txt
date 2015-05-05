@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Agatha H. Smith
+Date of Birth -- 	10/27/93
+Email Address -- 	agatha.smith@northwestern.edu
+Department -- 	Political Science
+Height -- 	5ft,4in
+Weight -- 	184lbs
+Favorite Color -- 	Purple
+Favorite Animal -- 	Mouse
+Zodiac Sign -- 	October

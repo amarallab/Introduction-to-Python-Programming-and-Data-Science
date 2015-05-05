@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Annabelle Bailey
+Date of Birth -- 	9/12/82
+Email Address -- 	annabelle.bailey@northwestern.edu
+Department -- 	Chemistry
+Height -- 	6ft,0in
+Weight -- 	172lbs
+Favorite Color -- 	Red
+Favorite Animal -- 	Dog
+Zodiac Sign -- 	September
