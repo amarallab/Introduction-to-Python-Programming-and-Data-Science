@@ -6,7 +6,9 @@ aimed at beginners and has been graciously sponsored by Northwestern University 
 Data Initiative.
 
 Any comments, questions, or concerns can be directed to:
+
 Luis A.N. Amaral <amaral@northwestern.edu>
+
 Adam R. Pah <adamrpah@gmail.com>
 
 #Software Installation
