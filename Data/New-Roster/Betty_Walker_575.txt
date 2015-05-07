@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Betty P. Walker
+Date of Birth -- 	7/27/81
+Email Address -- 	betty.walker@northwestern.edu
+Department -- 	Engineering
+Height -- 	4ft,10in
+Weight -- 	217lbs
+Favorite Color -- 	Pink
+Favorite Animal -- 	Mouse
+Zodiac Sign -- 	July

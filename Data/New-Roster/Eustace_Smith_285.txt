@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Eustace Y. Smith
+Date of Birth -- 	4/27/80
+Email Address -- 	eustace.smith@northwestern.edu
+Department -- 	Nursing
+Height -- 	6ft,0in
+Weight -- 	176lbs
+Favorite Color -- 	Yellow
+Favorite Animal -- 	Horse
+Zodiac Sign

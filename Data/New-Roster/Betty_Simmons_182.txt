@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Betty Y. Simmons
+Date of Birth -- 	11/19/84
+Email Address -- 	betty.simmons@northwestern.edu
+Department -- 	English
+Height -- 	5ft,5in
+Weight -- 	157lbs
+Favorite Color -- 	Green
+Favorite Animal -- 	Panda
+Zodiac Sign -- 	November

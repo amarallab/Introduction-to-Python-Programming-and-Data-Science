@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Betty O. Lee
+Date of Birth -- 	8/31/75
+Email Address -- 	betty.lee@northwestern.edu
+Department -- 	Nursing
+Height -- 	6ft,1in
+Weight -- 	185lbs
+Favorite Color -- 	Yellow
+Favorite Animal -- 	Mouse
+Zodiac Sign -- 	August

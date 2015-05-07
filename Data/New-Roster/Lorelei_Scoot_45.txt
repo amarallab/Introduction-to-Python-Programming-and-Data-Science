@@ -1,0 +1,13 @@
+#This is a file that holds important personal information that should not be shared. You are being watched.
+
+
+
+Name -- 	Lorelei Scoot
+Date of Birth -- 	12/5/90
+Email Address -- 	lorelei.scoot@northwestern.edu
+Department -- 	Math
+Height -- 	5ft,6in
+Weight -- 	155lbs
+Favorite Color -- 	Red
+Favorite Animal -- 	Cat
+Zodiac Sign -- 	December
