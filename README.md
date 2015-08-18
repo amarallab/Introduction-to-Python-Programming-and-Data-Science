@@ -1,9 +1,8 @@
 # Introduction to Python Programming and Data Science Bootcamp
 
 These materials are a part of the Introduction to Python Programming and Data Science Bootcamp that
-is run at Northwestern University. To date this Bootcamp has been an intensive, five day bootcamp
-aimed at beginners and has been graciously sponsored by Northwestern University as a part of its Big
-Data Initiative.
+is run at Northwestern University. 
+This bootcamp is graciously sponsored by Northwestern University as a part of its Big Data Initiative.
 
 Any comments, questions, or concerns can be directed to:
 
@@ -33,7 +32,9 @@ modules will run very slowly on your hardware.
 
 #Downloading Course Materials
 
-Lorem ipsum dolor.
+The course materials can be downloaded from the repository's (github
+page)[http://amarallab.github.io/Introduction-to-Python-Programming-and-Data-Science/]. Just
+download the zip file and unzip it onto your Desktop.
 
 #Usage of Course Materials
 
@@ -45,7 +46,7 @@ teach the basics of python programming and computational data analysis.
 
 IPython Notebook is installed by default with the Anaconda Python distribution so
 everyone that has followed the installation instructions will have it. A basic demonstration of how
-to start IPython Notebook server and use it is here <need.video.com>
+to start an IPython Notebook server and use it is here <need.video.com>
 
 #Acknowledgements
 
@@ -60,7 +61,7 @@ lecturers in the real world. We would like to thank:
 * Joao Moreira
 * Jackie Milhans
 * Aaron Oppenheimer
-* Nick Timkovitch
+* Nick Timkovich
 * Max Wasserman
 * Peter Winter
 * Jia Wu
