@@ -1,0 +1,1498 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass{article}
+
+    
+    
+    \usepackage{graphicx} % Used to insert images
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{color} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    
+
+    
+    
+    \definecolor{orange}{cmyk}{0,0.4,0.8,0.2}
+    \definecolor{darkorange}{rgb}{.71,0.21,0.01}
+    \definecolor{darkgreen}{rgb}{.12,.54,.11}
+    \definecolor{myteal}{rgb}{.26, .44, .56}
+    \definecolor{gray}{gray}{0.45}
+    \definecolor{lightgray}{gray}{.95}
+    \definecolor{mediumgray}{gray}{.8}
+    \definecolor{inputbackground}{rgb}{.95, .95, .85}
+    \definecolor{outputbackground}{rgb}{.95, .95, .95}
+    \definecolor{traceback}{rgb}{1, .95, .95}
+    % ansi colors
+    \definecolor{red}{rgb}{.6,0,0}
+    \definecolor{green}{rgb}{0,.65,0}
+    \definecolor{brown}{rgb}{0.6,0.6,0}
+    \definecolor{blue}{rgb}{0,.145,.698}
+    \definecolor{purple}{rgb}{.698,.145,.698}
+    \definecolor{cyan}{rgb}{0,.698,.698}
+    \definecolor{lightgray}{gray}{0.5}
+    
+    % bright ansi colors
+    \definecolor{darkgray}{gray}{0.25}
+    \definecolor{lightred}{rgb}{1.0,0.39,0.28}
+    \definecolor{lightgreen}{rgb}{0.48,0.99,0.0}
+    \definecolor{lightblue}{rgb}{0.53,0.81,0.92}
+    \definecolor{lightpurple}{rgb}{0.87,0.63,0.87}
+    \definecolor{lightcyan}{rgb}{0.5,1.0,0.83}
+    
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{Data-Types}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=blue,
+      linkcolor=darkorange,
+      citecolor=darkgreen,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \section{What's a variable?}\label{whats-a-variable}
+
+Let's start with going over one of the most basic concepts in
+programming, using a \emph{variable}. You've heard this term used before
+in math class (remember \(y = mx + b\)?) and our usage here is more or
+less the same.
+
+A \textbf{variable} is a \textbf{symbolic name} that is associated with
+some \textbf{value}.
+
+This is the most basic part of programming, because we want to have some
+name that we can call and will return a value. We can do this simply,
+just like:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{number} \PY{o}{=} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+    Now we have created \texttt{number} as the \textbf{variable} and
+assigned \texttt{2} as its \textbf{value}. As a hint, the construction
+of
+
+\emph{variable} = \emph{value}
+
+will hold in most other programming languages too. Now at any time we
+can use our variable \texttt{number} again, or just look at its value.
+We can look at it's value by using the \texttt{print()} function in
+Python.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{k}{print}\PY{p}{(} \PY{n}{number} \PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+2
+    \end{Verbatim}
+
+    We can also use the variable in a mathematical expression too.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{number} \PY{o}{*} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}4}]:} 4
+\end{Verbatim}
+        
+    An important thing to note though is that a variable can have its
+associated value \textbf{change}. So if we reassign \texttt{number}
+using our variable creation syntax above, we'll see that it's value
+changes.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{number} \PY{o}{=} \PY{l+m+mi}{5}
+        \PY{k}{print}\PY{p}{(}\PY{n}{number}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+5
+    \end{Verbatim}
+
+    An important part to remember about variables is that it's up to you to
+name them well. There are a number of different data types in Python,
+but there's no distinction on how you have to name them. So this means
+that it is up to you to give good, descriptive names to your variables.
+
+Why is that important?
+
+Well, the whole point of descriptive variable names is to improve
+readability and understanding of code by yourself and others. We
+typically think that we will remember everything that we do, but after a
+month or two of doing something else it's hard to remember any one piece
+of code. Good naming practices can make all the difference here.
+
+We can even go through a quick example.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{number} \PY{o}{=} \PY{l+s}{\PYZsq{}}\PY{l+s}{Helen}\PY{l+s}{\PYZsq{}}
+\end{Verbatim}
+
+    Here I've gone and changed the variable \texttt{number} to stand for
+someone's name. Now that isn't great because when most people see the
+word \texttt{number} they expect the variable to contain some kind of
+numeric value. This means that they might want to perform some math with
+the variable and they would then quickly experience this.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{number} \PY{o}{+} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+
+        ---------------------------------------------------------------------------
+    TypeError                                 Traceback (most recent call last)
+
+        <ipython-input-7-e96a55dd7add> in <module>()
+    ----> 1 number + 2
+    
+
+        TypeError: Can't convert 'int' object to str implicitly
+
+    \end{Verbatim}
+
+    An error!
+
+I know that this is a pretty simplistic example, but just try to keep
+this point in my mind as we work through these tutorials. Now, onto the
+meat!
+
+    \section{The basic data types}\label{the-basic-data-types}
+
+Python has eight basic data types for you to use with variables. The
+first four that we will cover here all allow for a variable to be a
+single value. These four types are:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Integers
+\item
+  Floats
+\item
+  Strings
+\item
+  Booleans
+\end{itemize}
+
+The other four we will cover in the next lesson. Those types allow a
+variable to hold multiple elements as a single value. These are great
+for keeping multiple related values together. These collection types
+are:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Tuples
+\item
+  Lists
+\item
+  Sets
+\item
+  Dictionaries
+\end{itemize}
+
+Now, let's start with one of the most basic data types, the integer.
+
+    \section{Integers}\label{integers}
+
+Integers are the discrete counting numbers that we've been using since
+you started counting with your fingers. Even without creating any
+variables we can still do basic arithmetic.
+
+All of the basic arithmetic operations are the same as if we were to
+write them out on paper.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{l+m+mi}{2} \PY{o}{+} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}8}]:} 4
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{l+m+mi}{4} \PY{o}{\PYZhy{}} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}9}]:} 2
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{l+m+mi}{2} \PY{o}{*} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}10}]:} 4
+\end{Verbatim}
+        
+    We can also store the result of an operation into a variable. The
+variable will store the evaluated answer, not the arithmetic expression.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{first\PYZus{}result} \PY{o}{=} \PY{l+m+mi}{8} \PY{o}{/} \PY{l+m+mi}{3}
+         \PY{n}{first\PYZus{}result}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}11}]:} 2.6666666666666665
+\end{Verbatim}
+        
+    We see that the division operator stores the answer that we are used to,
+which is \(2.6\bar{6}\). This behavior for the division operator is
+actually new in Python 3! Before in Python 2 when we would do the
+operation
+
+\texttt{first\_result\ =\ 8\ /\ 3}
+
+We would get the result:
+
+\texttt{print(\ first\_result\ )\ ==\textgreater{}\ 2}
+
+This was because it was thought that if we divide one integer by another
+integer, that the operation should return an integer in order to keep
+all the variable types the same.
+
+To access this form of truncating division (it's called truncating
+division, because it just truncates all the numbers after the decimal)
+we actually use \texttt{//} like this:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n}{second\PYZus{}result} \PY{o}{=} \PY{l+m+mi}{8} \PY{o}{/}\PY{o}{/} \PY{l+m+mi}{3}
+         \PY{n}{second\PYZus{}result}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}12}]:} 2
+\end{Verbatim}
+        
+    If we wanted to get the remainder, we would use \texttt{\%}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{l+m+mi}{5} \PY{o}{\PYZpc{}} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}13}]:} 1
+\end{Verbatim}
+        
+    and it even works with a decimal.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{l+m+mf}{4.2} \PY{o}{\PYZpc{}} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}14}]:} 0.20000000000000018
+\end{Verbatim}
+        
+    \section{Floats}\label{floats}
+
+And that was a perfect introduction to a float, which is simply a number
+with a decimal.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}15}]:} \PY{n}{new\PYZus{}float} \PY{o}{=} \PY{l+m+mf}{4.0}
+         \PY{k}{print}\PY{p}{(}\PY{n}{new\PYZus{}float}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+4.0
+    \end{Verbatim}
+
+    Wait, so what if I want to change an integer to a float or vice versa???
+
+All we have to do is cast the number using the data type name that we
+want to transform it to. We can see that below.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}16}]:} \PY{n+nb}{int}\PY{p}{(}\PY{l+m+mf}{4.8}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}16}]:} 4
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}17}]:} \PY{n+nb}{float}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}17}]:} 2.0
+\end{Verbatim}
+        
+    If you're ever confused or interested about what the type of a variable
+is you can always just check it with \texttt{type}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{n+nb}{type}\PY{p}{(}\PY{n}{new\PYZus{}float}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}18}]:} float
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}19}]:} \PY{n+nb}{type}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}19}]:} int
+\end{Verbatim}
+        
+    Now something that you should notice here is that \texttt{float} and
+\texttt{int} are colored green (as is \texttt{print} and \texttt{type}).
+That's because these are special words in Python that are already
+defined by the language. However, Python will let you overwrite them but
+it really is best to never do that! But you can see that if you ever
+accidentally do it, like so
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}20}]:} \PY{n+nb}{int} \PY{o}{=} \PY{l+m+mi}{4}
+         \PY{k}{print}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{What have we don to int }\PY{l+s}{\PYZdq{}}\PY{p}{,} \PY{n+nb}{int}\PY{p}{)}
+         \PY{n+nb}{int}\PY{p}{(}\PY{l+m+mf}{5.0}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+What have we don to int  4
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+
+        ---------------------------------------------------------------------------
+    TypeError                                 Traceback (most recent call last)
+
+        <ipython-input-20-3be9f679579b> in <module>()
+          1 int = 4
+          2 print("What have we don to int ", int)
+    ----> 3 int(5.0)
+    
+
+        TypeError: 'int' object is not callable
+
+    \end{Verbatim}
+
+    We'll lose the behavior of the function. However, we can get it back if
+we just delete the assignment that we made.
+
+To do that we use the \texttt{del} operator, which will delete a
+variable and its assignment. It's another one of the special words in
+Python.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}21}]:} \PY{k}{del} \PY{n+nb}{int}
+         \PY{n+nb}{int}\PY{p}{(}\PY{l+m+mf}{5.0}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}21}]:} 5
+\end{Verbatim}
+        
+    Moving forward with arithmetic, we can make entire mathematical
+expressions. Just like when we first learned algebra, Python respects
+the order of operations when it evaluates expressions (PEMDAS -
+Parentheses, Exponents, Multiplication, Division, Addition,
+Subtraction).
+
+If we want to use an exponent we just use the \texttt{**} operator
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}22}]:} \PY{l+m+mi}{2} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{3}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}22}]:} 8
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}23}]:} \PY{n}{eqn1} \PY{o}{=} \PY{l+m+mi}{2} \PY{o}{*} \PY{l+m+mi}{3} \PY{o}{\PYZhy{}} \PY{l+m+mi}{2}
+         \PY{k}{print}\PY{p}{(} \PY{n}{eqn1} \PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+4
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}24}]:} \PY{n}{eqn2} \PY{o}{=} \PY{o}{\PYZhy{}}\PY{l+m+mi}{2} \PY{o}{+} \PY{l+m+mi}{2} \PY{o}{*} \PY{l+m+mi}{3}
+         \PY{k}{print}\PY{p}{(} \PY{n}{eqn2} \PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+4
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}25}]:} \PY{n}{eqn3} \PY{o}{=} \PY{o}{\PYZhy{}}\PY{l+m+mi}{2} \PY{o}{+} \PY{p}{(}\PY{l+m+mi}{2} \PY{o}{\PYZpc{}} \PY{l+m+mi}{3}\PY{p}{)}
+         \PY{k}{print}\PY{p}{(} \PY{n}{eqn3} \PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+0
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}26}]:} \PY{n}{eqn4} \PY{o}{=} \PY{p}{(}\PY{o}{.}\PY{l+m+mi}{3} \PY{o}{+} \PY{l+m+mi}{5}\PY{p}{)} \PY{o}{/}\PY{o}{/} \PY{l+m+mi}{2}
+         \PY{k}{print}\PY{p}{(}\PY{n}{eqn4}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+2.0
+    \end{Verbatim}
+
+    Python also defines equivalencies: * \texttt{==} * \texttt{!=} *
+\texttt{\textless{}=} * \texttt{\textgreater{}=} * \texttt{\textless{}}
+* \texttt{\textgreater{}}
+
+    The \(==\) operator let's us check if one side of the operator is equal
+to the other side.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{l+m+mi}{4} \PY{o}{==} \PY{l+m+mi}{4}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}1}]:} True
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{l+m+mi}{4} \PY{o}{==} \PY{l+m+mi}{5}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}2}]:} False
+\end{Verbatim}
+        
+    We see here that Python evaluates the expression and if it is correct it
+tells us that it is \texttt{True} or if it is incorrect it tells us that
+it is \texttt{False}.
+
+The \(!=\) operator let's us see if one side does not equal the other
+side
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}29}]:} \PY{l+m+mi}{4} \PY{o}{!=} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}29}]:} True
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}30}]:} \PY{l+m+mi}{4} \PY{o}{!=} \PY{l+m+mi}{4}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}30}]:} False
+\end{Verbatim}
+        
+    And then the greater than, less than, greater than or equal to, or less
+than or equal to operators all work as we would expect.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}31}]:} \PY{l+m+mi}{4} \PY{o}{\PYZgt{}} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}31}]:} True
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}32}]:} \PY{l+m+mi}{4} \PY{o}{\PYZgt{}} \PY{l+m+mi}{4}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}32}]:} False
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}33}]:} \PY{l+m+mi}{4} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{l+m+mi}{4}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}33}]:} True
+\end{Verbatim}
+        
+    \section{Booleans}\label{booleans}
+
+Testing equivalencies is a perfect introduction to our next variable
+type, the Boolean. In its most basic form, a Boolean is just
+\texttt{True} or \texttt{False}.
+
+With just these two variables we can implement basic logic and check for
+truth in a programming language. Let's say that I have just one puppy at
+home and his name is Frankenstein. So I will say that the variable puppy
+is True.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}34}]:} \PY{n}{puppy} \PY{o}{=} \PY{n+nb+bp}{True}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}35}]:} \PY{k}{print}\PY{p}{(}\PY{n}{puppy}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+True
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}36}]:} \PY{n+nb}{type}\PY{p}{(}\PY{n}{puppy}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}36}]:} bool
+\end{Verbatim}
+        
+    Here we can see that when we print \texttt{puppy} it says \texttt{True}
+and that the type is \texttt{bool}.
+
+Since I only have one puppy, I'm going to say that \texttt{puppies} is
+\texttt{False}.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}37}]:} \PY{n}{puppies} \PY{o}{=} \PY{n+nb+bp}{False}
+\end{Verbatim}
+
+    In Python we could have just created both of those variables at the same
+time. I'll show that below, but the important thing is that the number
+of variables on the left-hand side of the assignment operator
+(\texttt{=}) should be equal to the number of variables on the
+right-hand side.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}38}]:} \PY{n}{puppy}\PY{p}{,} \PY{n}{puppies} \PY{o}{=} \PY{n+nb+bp}{True}\PY{p}{,} \PY{n+nb+bp}{False}
+\end{Verbatim}
+
+    and we'll see here that each of those variables has its own value.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}39}]:} \PY{k}{print}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{Do I have a puppy?}\PY{l+s}{\PYZdq{}}\PY{p}{,} \PY{n}{puppy}\PY{p}{)}
+         \PY{k}{print}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{Do I have puppies?}\PY{l+s}{\PYZdq{}}\PY{p}{,} \PY{n}{puppies}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Do I have a puppy? True
+Do I have puppies? False
+    \end{Verbatim}
+
+    To implement logic statements we have three operations: \texttt{and},
+\texttt{not}, and \texttt{or}.
+
+If I use the \texttt{and} operator, then Python both sides of the
+\texttt{and} expression need to be True for the expression to be true.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}40}]:} \PY{n+nb+bp}{True} \PY{o+ow}{and} \PY{n+nb+bp}{True}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}40}]:} True
+\end{Verbatim}
+        
+    If one side of the expression is \texttt{False}, then the whole
+expression will be \texttt{False}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}41}]:} \PY{n+nb+bp}{True} \PY{o+ow}{and} \PY{n+nb+bp}{False}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}41}]:} False
+\end{Verbatim}
+        
+    and as you would expect we can perform these expressions with variables
+(remember that I only have one puppy).
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}42}]:} \PY{n}{puppy} \PY{o+ow}{and} \PY{n}{puppies}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}42}]:} False
+\end{Verbatim}
+        
+    The \texttt{not} operator expects that the following value should be
+\texttt{False} for the expression to be true. If the following value is
+\texttt{True} or exists then it will say that the expression is
+\texttt{False}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}43}]:} \PY{o+ow}{not} \PY{n}{puppies}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}43}]:} True
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}44}]:} \PY{o+ow}{not} \PY{n}{puppy}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}44}]:} False
+\end{Verbatim}
+        
+    and we can combine that with the \texttt{and} operator to make our
+entire previous statement about my pets \texttt{True}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}45}]:} \PY{n}{puppy} \PY{o+ow}{and} \PY{o+ow}{not} \PY{n}{puppies}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}45}]:} True
+\end{Verbatim}
+        
+    Finally, the \texttt{or} operator just requires that \textbf{at least
+one} side of the expression is \texttt{True} for the expression to be
+\texttt{True}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}46}]:} \PY{n}{puppy} \PY{o+ow}{or} \PY{n}{puppies}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}46}]:} True
+\end{Verbatim}
+        
+    But we still need at least one side to be \texttt{True}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}47}]:} \PY{n+nb+bp}{False} \PY{o+ow}{or} \PY{n+nb+bp}{False}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}47}]:} False
+\end{Verbatim}
+        
+    \section{Strings}\label{strings}
+
+Finally, we have our last basic data type: Strings. Text is something
+that is intuitive to us as humans but dealing with it programmatically
+can become complicated (especially when there is a lot of it and we
+don't know it's structure to begin with!).
+
+To start off easily let's just make some variables.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}48}]:} \PY{n}{hello} \PY{o}{=} \PY{l+s}{\PYZsq{}}\PY{l+s}{hello}\PY{l+s}{\PYZsq{}}
+         
+         \PY{k}{print}\PY{p}{(} \PY{n}{hello} \PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+hello
+    \end{Verbatim}
+
+    Now, it's important to remember that the variable name does not need to
+be the same as its value.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}49}]:} \PY{n}{falafel} \PY{o}{=} \PY{l+s}{\PYZsq{}}\PY{l+s}{gyro}\PY{l+s}{\PYZsq{}}
+         
+         \PY{k}{print}\PY{p}{(} \PY{n}{falafel} \PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+gyro
+    \end{Verbatim}
+
+    We can even use basic math operators to add strings together and make a
+longer string
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}50}]:} \PY{k}{print}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{gyros}\PY{l+s}{\PYZdq{}} \PY{o}{+} \PY{l+s}{\PYZdq{}}\PY{l+s}{ and }\PY{l+s}{\PYZdq{}} \PY{o}{+} \PY{l+s}{\PYZdq{}}\PY{l+s}{falafel}\PY{l+s}{\PYZdq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+gyros and falafel
+    \end{Verbatim}
+
+    We can even just multiply a string to make it longer. Can you say
+\texttt{gyros} seven times fast?
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}51}]:} \PY{l+s}{\PYZdq{}}\PY{l+s}{gyros}\PY{l+s}{\PYZdq{}} \PY{o}{*} \PY{l+m+mi}{7}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}51}]:} 'gyrosgyrosgyrosgyrosgyrosgyrosgyros'
+\end{Verbatim}
+        
+    Because Python can!
+
+However, we can only use mathematical operations that make sense and are
+clear what should occur (that means additive operators). We can't divide
+or subtract though.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}52}]:} \PY{l+s}{\PYZdq{}}\PY{l+s}{gyros}\PY{l+s}{\PYZdq{}}\PY{o}{/}\PY{l+s}{\PYZdq{}}\PY{l+s}{falafel}\PY{l+s}{\PYZdq{}}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+
+        ---------------------------------------------------------------------------
+    TypeError                                 Traceback (most recent call last)
+
+        <ipython-input-52-ec2273e01fb3> in <module>()
+    ----> 1 "gyros"/"falafel"
+    
+
+        TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}53}]:} \PY{l+s}{\PYZdq{}}\PY{l+s}{gyros}\PY{l+s}{\PYZdq{}} \PY{o}{\PYZhy{}} \PY{l+s}{\PYZdq{}}\PY{l+s}{falafel}\PY{l+s}{\PYZdq{}}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+
+        ---------------------------------------------------------------------------
+    TypeError                                 Traceback (most recent call last)
+
+        <ipython-input-53-df4656ac4e0f> in <module>()
+    ----> 1 "gyros" - "falafel"
+    
+
+        TypeError: unsupported operand type(s) for -: 'str' and 'str'
+
+    \end{Verbatim}
+
+    Now we can see more easily that we can add strings and variables that
+have string values together to create a longer string and set that
+longer string to a variable.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}54}]:} \PY{n}{order} \PY{o}{=} \PY{n}{hello} \PY{o}{+} \PY{l+s}{\PYZsq{}}\PY{l+s}{, I would like a }\PY{l+s}{\PYZsq{}} \PY{o}{+} \PY{n}{falafel}
+         
+         \PY{k}{print}\PY{p}{(}\PY{n}{order}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+hello, I would like a gyro
+    \end{Verbatim}
+
+    Hmmm, well it is correct as a sentence but we forgot to capitalize
+\texttt{hello}! This gets to back to the fact that it is a lot easier
+for us to see and recognize strings after a lifetime of seeing them than
+it is for the computer. Fortunately, string variables have some built-in
+methods that we use on the variables to help with these situations.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}55}]:} \PY{n}{order}\PY{o}{.}\PY{n}{capitalize}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}55}]:} 'Hello, i would like a gyro'
+\end{Verbatim}
+        
+    BAM! We can just use the capitalize() method on the order variable and
+we will get the capitalized \texttt{hello}. An important thing to note
+is that while it is printing the string with \texttt{Hello}, it didn't
+actually change the order variable.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}56}]:} \PY{n}{order}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}56}]:} 'hello, I would like a gyro'
+\end{Verbatim}
+        
+    If we wanted to change the original \texttt{order} variable to the
+capitalized version, we would need to set \texttt{order} equal to
+\texttt{order} when we use the \texttt{capitalize()} function.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}57}]:} \PY{n}{order} \PY{o}{=} \PY{n}{order}\PY{o}{.}\PY{n}{capitalize}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{order}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}57}]:} 'Hello, i would like a gyro'
+\end{Verbatim}
+        
+    There are three other functions that perform actions like
+\texttt{capitalize()}, and those are:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  \texttt{lower()}, makes the entire string lowercase
+\item
+  \texttt{upper()}, makes the entire string uppercase
+\item
+  \texttt{title()}, capitalizes every word in a string
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}58}]:} \PY{n}{order}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}58}]:} 'Hello, I Would Like A Gyro'
+\end{Verbatim}
+        
+    But you'll notice that I screwed up a little bit by setting
+\texttt{order} to its capitalized version of itself (the grammar nazis
+reading along have probably been going crazy all this time!). When we
+capitalized the string, we lost the capitalized \texttt{i} which is
+necessary since it's the pronoun! Python is pretty smart, but it also
+does exactly what we told it to do and the \texttt{capitalize()}
+function only capitalizes the first letter in a string.
+
+The simplest thing to do would be to go back and recreate the order
+variable.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}59}]:} \PY{n}{order} \PY{o}{=} \PY{n}{hello}\PY{o}{.}\PY{n}{capitalize}\PY{p}{(}\PY{p}{)} \PY{o}{+} \PY{l+s}{\PYZsq{}}\PY{l+s}{, I would like a }\PY{l+s}{\PYZsq{}} \PY{o}{+} \PY{n}{falafel}
+         
+         \PY{n}{order}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}59}]:} 'Hello, I would like a gyro'
+\end{Verbatim}
+        
+    We could do this programmatically though by using some the other
+built-in functions.
+
+One way would be to \texttt{strip} away the \texttt{Hello,} at the
+start. Python has \texttt{strip} which strips away characters from the
+right side and \texttt{lstrip} which strips away characters starting
+from the left.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}60}]:} \PY{n}{order}\PY{o}{.}\PY{n}{lstrip}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{Helo,}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}60}]:} ' I would like a gyro'
+\end{Verbatim}
+        
+    Notice that I didn't need to put in \texttt{l} twice. That's because I
+just put in all of the individual characters I want stripped and Python
+goes and removes \textbf{any and all} instances of those characters
+until it encounters a character that I did not tell it to strip. We can
+test that by adding an \texttt{I} the next character that we see, but
+not a space which comes before it.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}61}]:} \PY{n}{order}\PY{o}{.}\PY{n}{lstrip}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{Helo,I}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}61}]:} ' I would like a gyro'
+\end{Verbatim}
+        
+    Same result! This is a handy way of thinking, we just want to strip away
+the parts we don't want until we get to what we do want.
+
+We can also check the contents of a string using built-in methods. For
+example, we can make sure that all of the characters are alphabetical.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}62}]:} \PY{n}{hello}\PY{o}{.}\PY{n}{isalpha}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}62}]:} True
+\end{Verbatim}
+        
+    This is handy because we can have numbers that are strings
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}63}]:} \PY{l+s}{\PYZsq{}}\PY{l+s}{4}\PY{l+s}{\PYZsq{}}\PY{o}{.}\PY{n}{isnumeric}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}63}]:} True
+\end{Verbatim}
+        
+    This is a way to test the contents of the string without knowing what's
+inside it. This is important because sometimes we will read in text that
+has numbers, but we'll want those numbers to become an integer or float
+so we can mathematically manipulate them.
+
+We can convert a string of numbers into an integer just by casting it
+with the \texttt{int()} function.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}64}]:} \PY{n}{real\PYZus{}number} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{4}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+         
+         \PY{k}{print}\PY{p}{(} \PY{n}{real\PYZus{}number} \PY{p}{)}
+         \PY{k}{print}\PY{p}{(} \PY{n+nb}{type}\PY{p}{(}\PY{n}{real\PYZus{}number}\PY{p}{)} \PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+4
+<class 'int'>
+    \end{Verbatim}
+
+    We can do the same thing for floats also.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}65}]:} \PY{n+nb}{float}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{4.2}\PY{l+s}{\PYZsq{}}\PY{p}{)} \PY{o}{*} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}65}]:} 8.4
+\end{Verbatim}
+        
+    However, we cannot do that with anything that has alphabetical
+characters.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}66}]:} \PY{n+nb}{float}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{I would like 4.5 gyros}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+
+        ---------------------------------------------------------------------------
+    ValueError                                Traceback (most recent call last)
+
+        <ipython-input-66-b7a074fdfbca> in <module>()
+    ----> 1 float('I would like 4.5 gyros')
+    
+
+        ValueError: could not convert string to float: 'I would like 4.5 gyros'
+
+    \end{Verbatim}
+
+    \section{The more complicated parts of
+Strings}\label{the-more-complicated-parts-of-strings}
+
+We already saw that we can strip out part of a string and that we can
+add strings together. In addition, strings also behave like a collection
+data type. That is, strings can be cut up and individual characterss can
+be accessed.
+
+This is something that is unique to strings among all the basic Python
+data types. If we have a number we can't access a single part of it and
+have it be the same value. We know intuitively that \texttt{40} is not
+the same as just \texttt{4} so we always need the entire value.
+
+When we access just a single element of the string, that is called
+\textbf{indexing}. To index a single element we just add
+\texttt{{[}\ {]}} after the variable name and tell it the numeric index
+of the element we want to access.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}67}]:} \PY{n}{falafel}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}67}]:} 'gyro'
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}68}]:} \PY{n}{falafel}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}68}]:} 'y'
+\end{Verbatim}
+        
+    Huh? I said that I wanted the first element but Python returned
+\texttt{y} which is the second character in the \texttt{falafel}
+variable.
+
+Why is that???
+
+In Python, like in most other programming languages, all sequences are
+actually \textbf{zero-indexed}. That means that the numerical index for
+the first element is actually \texttt{0}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}69}]:} \PY{n}{falafel}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}69}]:} 'g'
+\end{Verbatim}
+        
+    The counting after that position is normal. So if want the letter
+\texttt{r} that is the \textbf{third} letter in the word \texttt{gyro},
+the index will be \textbf{\texttt{2}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}70}]:} \PY{n}{falafel}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}70}]:} 'r'
+\end{Verbatim}
+        
+    We can also access elements starting from the end of the string too, we
+just need to use a negative number. To get the very last letter we use
+the index \textbf{\texttt{-1}}. The end starts from \texttt{-1} because
+\texttt{0} always means the first entry and there is no such thing as
+\texttt{-0}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}71}]:} \PY{n}{falafel}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}71}]:} 'o'
+\end{Verbatim}
+        
+    From the end, the counting works just the same as from the start
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}72}]:} \PY{n}{falafel}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{2}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}72}]:} 'r'
+\end{Verbatim}
+        
+    As you can see here, there is always more than one way to skin a cat
+with programming. No one way to solve the problem is more \emph{correct}
+than any other way, it just comes down to what makes sense for your
+problem, your code, and the way that you think about it.
+
+Something to be aware of though, is that if you try to access an element
+\textbf{it must exist}. That means that since \texttt{gyro} is four
+letters long, I cannot give it an index that is greater than \texttt{3}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}73}]:} \PY{n}{falafel}\PY{p}{[}\PY{l+m+mi}{5}\PY{p}{]}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+
+        ---------------------------------------------------------------------------
+    IndexError                                Traceback (most recent call last)
+
+        <ipython-input-73-9c7825952384> in <module>()
+    ----> 1 falafel[5]
+    
+
+        IndexError: string index out of range
+
+    \end{Verbatim}
+
+    That gives us an error! So always make sure that when you access an
+element that the index is within the range of how long the string is.
+
+    \section{Slicing a string}\label{slicing-a-string}
+
+What if we wanted to get out more than one element from a string? We can
+do that too, it's called \textbf{slicing}!
+
+The syntax for slicing is deceptively simple, the full syntax is:
+
+\texttt{variable{[}start\_index\ :\ stop\_index\ :\ step{]}}
+
+You'll see that all of the inputs go within the \texttt{{[}{]}} and the
+\texttt{:} separates each input.
+
+The \texttt{start\_index} tells python what index we want to start
+getting elements from.
+
+The \texttt{stop\_index} tells python what index that we want elements
+\textbf{up to but not including}
+
+The \texttt{step} tells python how many steps to take between elements
+within the range. This means that we don't need to take every element.
+We could instead take \textbf{every other} element if we specified a
+\texttt{step} of \texttt{2}.
+
+So if we wanted to get the \texttt{gy} from \texttt{gyros} we would do
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}74}]:} \PY{n}{falafel}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}74}]:} 'gyro'
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}75}]:} \PY{n}{falafel}\PY{p}{[}\PY{l+m+mi}{0} \PY{p}{:} \PY{l+m+mi}{2} \PY{p}{:} \PY{l+m+mi}{1}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}75}]:} 'gy'
+\end{Verbatim}
+        
+    Remember that the index of \texttt{2} means the third element, so we
+specified that we wanted every letter from the first index \textbf{up
+until} the third index, and we want every letter.
+
+We could get every other letter from the first four letters like so:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}76}]:} \PY{n}{falafel}\PY{p}{[}\PY{l+m+mi}{0} \PY{p}{:} \PY{l+m+mi}{4} \PY{p}{:} \PY{l+m+mi}{2}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}76}]:} 'gr'
+\end{Verbatim}
+        
+    However, you'll rarely see someone specify all of those inputs when they
+slice. If you don't give all of the inputs Python just assumes the
+defaults. Those are:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  \texttt{start\_index} is the first index \texttt{0}
+\item
+  \texttt{stop\_index} is the last index \texttt{-1} (notice that this
+  will always be the last character no matter how long the string is)
+\item
+  \texttt{step} of \texttt{1}
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}77}]:} \PY{n}{falafel}\PY{p}{[}\PY{l+m+mi}{0} \PY{p}{:} \PY{l+m+mi}{2}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}77}]:} 'gy'
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}78}]:} \PY{n}{falafel}\PY{p}{[}\PY{p}{:} \PY{l+m+mi}{2}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}78}]:} 'gy'
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}79}]:} \PY{n}{falafel}\PY{p}{[}\PY{p}{:} \PY{l+m+mi}{4} \PY{p}{:} \PY{l+m+mi}{2}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}79}]:} 'gr'
+\end{Verbatim}
+        
+    And like you noticed from the default listings, we can mix and match
+positive and negative indices like so
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}80}]:} \PY{n}{falafel}\PY{p}{[} \PY{p}{:} \PY{o}{\PYZhy{}}\PY{l+m+mi}{1} \PY{p}{:} \PY{l+m+mi}{2}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}80}]:} 'gr'
+\end{Verbatim}
+        
+    One difference from accessing a single element though, is that we can
+give a \texttt{stop\_index} that is bigger than the length of the
+string. Python will just give us all of the possible characters that
+exist happily.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}81}]:} \PY{n}{falafel}\PY{p}{[}\PY{p}{:} \PY{l+m+mi}{10}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}81}]:} 'gyro'
+\end{Verbatim}
+        
+    However, in most situations that is poor practice and you should just
+not give a \texttt{stop\_index} so that it returns all of the
+characters.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}82}]:} \PY{n}{falafel}\PY{p}{[}\PY{p}{:}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}82}]:} 'gyro'
+\end{Verbatim}
+        
+    An important note though is that the \texttt{start\_index} always has to
+come before the \texttt{stop\_index}, otherwise we will get an empty
+string
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}83}]:} \PY{n}{falafel}\PY{p}{[}\PY{l+m+mi}{3} \PY{p}{:} \PY{l+m+mi}{1}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}83}]:} ''
+\end{Verbatim}
+        
+    That's because there is no valid sequence moving from left to right
+while reading the string that exists with those limits.
+
+If we want it to return the slice but reversed, we actually control that
+with the \texttt{step} input and tell it that we want the reverse slice
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}84}]:} \PY{n}{falafel}\PY{p}{[}\PY{l+m+mi}{3} \PY{p}{:} \PY{l+m+mi}{1} \PY{p}{:} \PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}84}]:} 'or'
+\end{Verbatim}
+        
+    \section{Exercises}\label{exercises}
+
+    Use five mathematical operators (\texttt{+\ -\ *\ /\ **}) to produce the
+number \texttt{4}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}84}]:} 
+\end{Verbatim}
+
+    Convert the output of one of those expressions to a \texttt{float}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}84}]:} 
+\end{Verbatim}
+
+    I have a string called pet\_shop that has all of the different pet
+varieties in a store.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}85}]:} \PY{n}{pet\PYZus{}shop} \PY{o}{=} \PY{l+s}{\PYZsq{}}\PY{l+s}{dog cat hedgehog fish bird}\PY{l+s}{\PYZsq{}}
+\end{Verbatim}
+
+    Capitalize all of the different pet types in a single line
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}85}]:} 
+\end{Verbatim}
+
+    Print out a single \texttt{g} from \texttt{pet\_shop}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}85}]:} 
+\end{Verbatim}
+
+    Print out just \texttt{hedgehog}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}85}]:} 
+\end{Verbatim}
+
+    Print out \texttt{gohegdeh}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}85}]:} 
+\end{Verbatim}
+
+    I have two variables
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}86}]:} \PY{n}{dogs}\PY{p}{,} \PY{n}{cats} \PY{o}{=} \PY{l+s}{\PYZsq{}}\PY{l+s}{8}\PY{l+s}{\PYZsq{}}\PY{p}{,} \PY{l+s}{\PYZsq{}}\PY{l+s}{4}\PY{l+s}{\PYZsq{}}
+\end{Verbatim}
+
+    that tell me how many \texttt{dogs} and \texttt{cat} I have at the
+store. Using those two variables, calculate how many more dogs I have
+than cats
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}86}]:} 
+\end{Verbatim}
+
+    Exercises completed!
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}87}]:} \PY{k+kn}{from} \PY{n+nn}{IPython.core.display} \PY{k+kn}{import} \PY{n}{HTML}
+         
+         
+         \PY{k}{def} \PY{n+nf}{css\PYZus{}styling}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+             \PY{n}{styles} \PY{o}{=} \PY{n+nb}{open}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{../styles/custom.css}\PY{l+s}{\PYZdq{}}\PY{p}{,} \PY{l+s}{\PYZdq{}}\PY{l+s}{r}\PY{l+s}{\PYZdq{}}\PY{p}{)}\PY{o}{.}\PY{n}{read}\PY{p}{(}\PY{p}{)}
+             \PY{k}{return} \PY{n}{HTML}\PY{p}{(}\PY{n}{styles}\PY{p}{)}
+         \PY{n}{css\PYZus{}styling}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}87}]:} <IPython.core.display.HTML at 0x1038db940>
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}}]:} 
+\end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
