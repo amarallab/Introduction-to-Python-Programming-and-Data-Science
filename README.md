@@ -32,8 +32,8 @@ modules will run very slowly on your hardware.
 
 #Downloading Course Materials
 
-The course materials can be downloaded from the repository's (github
-page)[http://amarallab.github.io/Introduction-to-Python-Programming-and-Data-Science/]. Just
+The course materials can be downloaded from the repository's [github
+page](http://amarallab.github.io/Introduction-to-Python-Programming-and-Data-Science/). Just
 download the zip file and unzip it onto your Desktop.
 
 #Usage of Course Materials
