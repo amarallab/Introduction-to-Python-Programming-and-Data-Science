@@ -42,9 +42,6 @@
     .CodeMirror{
             font-family: "Source Code Pro", source-code-pro,Consolas, monospace;
     }
-    .prompt{
-        display: None;
-    }
     .text_cell_render h5 {
         font-weight: 300;
         font-size: 22pt;
