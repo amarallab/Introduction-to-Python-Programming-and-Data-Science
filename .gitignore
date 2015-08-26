@@ -57,7 +57,7 @@ docs/_build/
 target/
 
 # IPython stuff
-.ipynb_checkpoints/*
+.ipynb_checkpoints
 
 # Windows image file caches
 Thumbs.db
@@ -101,3 +101,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Git?
+.merge_file_*
