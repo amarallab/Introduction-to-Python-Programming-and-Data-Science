@@ -21,8 +21,9 @@
     }
     div.cell{
         width:800px;
-        margin-left:16% !important;
-        margin-right:auto;
+        /*margin-left:0% !important;*/
+        /*margin-left:auto;*/
+        /*margin-right:auto;*/
     }
     h1 {
         font-family: Helvetica, serif;
