@@ -5,6 +5,9 @@ __pycache__/
 # C extensions
 *.so
 
+# mac cruft
+.DS_Store
+
 # Distribution / packaging
 .Python
 env/
@@ -100,4 +103,3 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-
