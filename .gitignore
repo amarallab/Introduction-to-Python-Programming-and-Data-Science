@@ -106,3 +106,6 @@ Temporary Items
 
 # Git?
 .merge_file_*
+
+# Individual student hexaco results
+Data/my_hexaco.html
