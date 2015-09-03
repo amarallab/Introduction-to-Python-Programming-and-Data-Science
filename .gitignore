@@ -61,6 +61,7 @@ target/
 
 # IPython stuff
 .ipynb_checkpoints
+.python-version
 
 # Windows image file caches
 Thumbs.db
