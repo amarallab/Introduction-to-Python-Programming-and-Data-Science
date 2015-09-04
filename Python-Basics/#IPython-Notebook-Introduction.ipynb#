@@ -3,7 +3,7 @@
   {
    "cell_type": "markdown",
    "metadata": {},
-   "source": [
+   "Source": [
     "# Welcome to the IPython Notebook\n",
     "\n",
     "What we have just opened (and where we came from) is an IPython notebook. "
@@ -23,43 +23,35 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": false
-   },
+   "Cell_type": "code",
+   "metadata": {},
    "outputs": [],
    "source": [
     "YouTubeVideo('UfjzqZK8Db4')"
    ]
   },
   {
-   "cell_type": "markdown",
+   "Cell_type": "markdown",
    "metadata": {},
    "source": [
-    "## Notebook is the best interpreter!\n",
+    "# But now, notebook!\n",
     "\n",
-    "iPython notebook can run the interpreter. In fact whenever you move to a new cell it is by default a Python interpreter!\n",
+    "IPython notebook can run the interpreter. In fact whenever you move to a new cell it is by default a Python interpreter!\n",
     "\n",
-    "Let me show you:"
+    "Let me show you"
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": false
-   },
+   "Cell_type": "code",
+   "metadata": {},
    "outputs": [],
    "source": [
     "'word' * 7"
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {
-    "collapsed": true
-   },
+   "Cell_type": "markdown",
+   "metadata": {},
    "source": [
     "There are a lot of nice features that come along with having the interpreter in a web page.\n",
     "\n",
@@ -72,11 +64,9 @@
   },
   {
    "cell_type": "markdown",
-   "metadata": {
-    "collapsed": true
-   },
+   "metadata": {},
    "source": [
-    "### The cell\n",
+    "## The cell\n",
     "\n",
     "The **gray boxes** are called **cells**.\n",
     "\n",
@@ -85,7 +75,7 @@
     "**When a cell does not have a prompt to the side that means it is not a `Code` cell**\n",
     "\n",
     "\n",
-    "###Running cells\n",
+    "##Running cells\n",
     "\n",
     "We can type code in a cell, but until we push the `play` button at the top or press `Shift+Enter` it has not been \"run.\"\n",
     "\n",
@@ -100,10 +90,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": false
-   },
+   "metadata": {},
    "outputs": [],
    "source": [
     "#Execute me second\n",
@@ -113,10 +100,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
+   "metadata": {},
    "outputs": [],
    "source": [
     "#Execute me first \n",
@@ -134,10 +118,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": false
-   },
+   "metadata": {},
    "outputs": [],
    "source": [
     "a_number * 5"
@@ -147,7 +128,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "###Execution of code inside a cell\n",
+    "##Execution of code inside a cell\n",
     "\n",
     "Each line of code inside a cell is called a **statement**.\n",
     "\n",
@@ -160,10 +141,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
+   "metadata": {},
    "outputs": [],
    "source": [
     "if a_number > 2:\n",
@@ -175,13 +153,22 @@
   {
    "cell_type": "markdown",
    "metadata": {},
-   "source": []
+   "source": [
+    "The other thing to be aware of is that once you use a variable, \n",
+    "**it persists across all cells and going forward in time**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a_number * 5"
+   ]
   },
   {
    "cell_type": "markdown",
-   "metadata": {
-    "collapsed": true
-   },
+   "metadata": {},
    "source": [
     "## Notebook features\n",
     "\n",
@@ -192,13 +179,10 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": false
-   },
+   "metadata": {},
    "outputs": [],
    "source": [
-    "#Place your cursor at the `_` and press tab\n",
+    "#Place your curser at the `_` and press tab\n",
     "\n",
     "another_"
    ]
@@ -218,10 +202,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": false
-   },
+   "metadata": {},
    "outputs": [],
    "source": [
     "#Place your cursor after the `(` and press Shift+Tab\n",
@@ -235,7 +216,9 @@
    "source": [
     "### Commenting multiple lines\n",
     "\n",
-    "You can also easily comment multiple lines. Just select multiple lines with your cursor and then press `Cmd and /` (`Ctrl and /` for Windows)\n",
+    "You can also easily comment multiple lines. Commenting makes it so that a line doesn't run but you still have it.\n",
+    "\n",
+    "Just select multiple lines with your cursor and then press `Cmd(Ctrl) and /`\n",
     "\n",
     "(You can uncomment multiple lines with the same key command)"
    ]
@@ -243,9 +226,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
+   "metadata": {},
    "outputs": [],
    "source": [
     "#Highlight the lines and then press Cmd+/\n",
@@ -269,10 +250,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
+   "metadata": {},
    "outputs": [],
    "source": [
     "#Highlight the lines and then press Tab\n",
@@ -299,10 +277,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": false
-   },
+   "metadata": {},
    "outputs": [],
    "source": [
     "from IPython.core.display import HTML\n",
@@ -315,15 +290,6 @@
     "css_styling()"
    ]
   },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  }
  ],
  "metadata": {
   "kernelspec": {
