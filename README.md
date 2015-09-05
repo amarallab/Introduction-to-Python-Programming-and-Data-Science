@@ -12,12 +12,13 @@ Any comments, questions, or concerns can be directed to:
 There is a basic core that is necessary to install in order to interactively use these course materials (which is how this bootcamp should be done). The two main requirements are:
 
 * Anaconda Python 3.4
-* PyCharm
 
-We use the Anaconda Python distribution because of its ease of installation and PyCharm for the development of scripts (in-class instruction only). Currently we have installation videos for both Mac OS X (OS X 10.10 version) and Microsoft Windows (Windows 8). These can be found on-line at:
+We use the Anaconda Python distribution because of its ease of installation. Currently we have installation videos for both Mac OS X (OS X 10.10 version) and Microsoft Windows (Windows 8). These can be found on-line at:
 
 * OS X <https://www.youtube.com/watch?v=UQhOyZXHkxI>
 * Windows <https://www.youtube.com/watch?v=w16iUU6IA5E>
+
+If you have Windows, you **must** turn off your anti-virus before installing Anaconda.
 
 While those exact operating system versions are not necessary, the installation on your personal computer will differ from the videos if it is not the same. If you do not have a machine with **at least** Windows 7 or OS X 10.8 we suggest that you use a different machine, since several of the modules will run very slowly on your hardware.
 
