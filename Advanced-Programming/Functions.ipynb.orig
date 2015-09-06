@@ -15,7 +15,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# Designing your code around functions\n",
+    "# Designing Functions: Build Hierarchically\n",
     "\n",
     "You have 800 data files to go through in `Data/Roster`. You could put all the code we wrote in the previous lesson into a `for` loop and \"rip\" through every single file in-turn.\n",
     "\n",
@@ -686,82 +686,10 @@
    "source": []
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  },
-  {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# Back of the Book\n",
+    "# 8. Back of the Book\n",
     "\n",
     "Not just the odd problems."
    ]
