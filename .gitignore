@@ -7,6 +7,7 @@ __pycache__/
 
 # mac cruft
 .DS_Store
+.-*
 
 # Distribution / packaging
 .Python
