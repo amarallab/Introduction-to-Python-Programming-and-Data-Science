@@ -15,8 +15,8 @@ Any comments, questions, or concerns can be directed to:
 
 ## Software Installation
 
-This bootcamp uses the [Anaconda Python 3.5 distribution](https://www.continuum.io/downloads)
-(Important!!! Install the Python 3.5 distribution, which is the right hand option for each operating
+This bootcamp uses the [Anaconda Python 3.8 distribution](https://www.continuum.io/downloads)
+(Important!!! Install the Python 3.8 distribution, which is the right hand option for each operating
 system).
 
 There are videos to help you understand the installation process; however, it is a simple installer
