@@ -1,0 +1,3 @@
+# packages in environment at /Users/adampah/.pyenv/versions/anaconda3-2020.02/envs/bootcamp:
+#
+# Name                    Version                   Build  Channel
